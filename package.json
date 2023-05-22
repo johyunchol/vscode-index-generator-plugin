@@ -2,7 +2,11 @@
   "name": "vscode-index-generator-plugin",
   "displayName": "Index Generator",
   "description": "index.ts generator",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/vscode-index-generator-plugin.git"
+  },
   "engines": {
     "vscode": "^1.78.0"
   },
@@ -14,15 +18,15 @@
   "contributes": {
     "commands": [
       {
-        "command": "vscode-index-generator-plugin.helloWorld",
+        "command": "vscode-index-generator-plugin.generate",
         "title": "Generate index.ts"
       }
     ],
     "menus": {
       "explorer/context": [
         {
-          "command": "vscode-index-generator-plugin.helloWorld",
-          "when": "resourceLangId == typescript || resourceExtname == ''",
+          "command": "vscode-index-generator-plugin.generate",
+          "when": "resourceLangId == typescript || resourceExtname == '' || resourceScheme == file",
           "group": "navigation"
         }
       ]
