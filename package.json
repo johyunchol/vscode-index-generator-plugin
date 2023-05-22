@@ -15,9 +15,18 @@
     "commands": [
       {
         "command": "vscode-index-generator-plugin.helloWorld",
-        "title": "Hello World"
+        "title": "Generate index.ts"
       }
-    ]
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "vscode-index-generator-plugin.helloWorld",
+          "when": "resourceLangId == typescript || resourceExtname == ''",
+          "group": "navigation"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
