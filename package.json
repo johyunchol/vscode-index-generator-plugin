@@ -3,6 +3,7 @@
   "displayName": "Index Generator",
   "description": "index.ts generator",
   "version": "1.0.0",
+  "publisher": "vscodeIndexGeneratorPlugin",
   "repository": {
     "type": "git",
     "url": "https://github.com/your-username/vscode-index-generator-plugin.git"
