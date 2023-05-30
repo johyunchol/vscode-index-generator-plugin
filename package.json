@@ -2,12 +2,13 @@
   "name": "vscode-index-generator-plugin",
   "displayName": "Index Generator",
   "description": "index.ts generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "vscodeIndexGeneratorPlugin",
   "repository": {
     "type": "git",
     "url": "https://github.com/your-username/vscode-index-generator-plugin.git"
   },
+  "icon": "images/appIcon.png",
   "engines": {
     "vscode": "^1.78.0"
   },
